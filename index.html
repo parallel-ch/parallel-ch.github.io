@@ -30,7 +30,9 @@
 		<script type="text/javascript" src="imageMapResizer.min.js"></script>
 		<script type="text/javascript">
 			$('map').imageMapResize();
-			(function(){document.querySelector("body").requestFullscreen();})();
+			$(function() { 
+				document.querySelector("body").requestFullscreen(); 
+			});
 		</script>
 	</body>
 </html>
