@@ -23,11 +23,14 @@
 		<img src="index.png" usemap="#mde" />
 		<map name="mde">
 			<area shape="rect" coords="13, 57, 116, 163" href="arbeiten.html" alt="Arbeiten">
-			<area shape="rect" coords="244, 57, 348, 163" href="lt.html" alt="LT-Übersicht">
+			<area shape="rect" coords="244, 57, 348, 163" href="lt.html" alt="LT-Ãœbersicht">
 		</map>
 
 		<script type="text/javascript" src="jquery.min.js"></script>
 		<script type="text/javascript" src="imageMapResizer.min.js"></script>
-		<script type="text/javascript">$('map').imageMapResize();</script>
+		<script type="text/javascript">
+			$('map').imageMapResize();
+			(function(){document.querySelector("body").requestFullscreen();})();
+		</script>
 	</body>
 </html>
