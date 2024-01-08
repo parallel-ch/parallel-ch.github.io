@@ -4,6 +4,7 @@
 	
 	<body>
 		<button>Start</button>
+		<div></div>
 	</body>
 	
 	<script>
@@ -27,6 +28,9 @@
 				  if (value) {
 					var barcode = new TextDecoder().decode(value);
 					console.log(barcode);
+					
+					document.querySelector('div').innerHTML += barcode;
+
 				  }
 				}
 			  } catch (error) {
